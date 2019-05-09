@@ -8,6 +8,7 @@
 
 import XCTest
 import RxTest
+import RxSwift
 
 @testable import RxSwiftSample
 
@@ -36,7 +37,28 @@ class RxSwiftSampleTests: XCTestCase {
     func testDebounce() {
         let scheduler = TestScheduler(initialClock: 0)
         
-        let observable = scheduler.crea
+        let observable = scheduler.createHotObservable([
+            Recorded.next(1, "R"),
+            Recorded.next(2, "Rx"),
+            Recorded.next(3, "RxS"),
+            Recorded.next(4, "RxSw"),
+            Recorded.next(5, "RxSwi"),
+            Recorded.next(6, "RxSwift")
+            ])
+        let seconds1: RxTimeInterval = .seconds(1)
+        _ = observable
+            .debounce(seconds1, scheduler: scheduler)
+            .subscribe(onNext: {
+                print("onNext: ", $0)
+            })
+        scheduler.start()
+        
+        _ = Observable.just(10)
+            .map { $0 * 2 }
+            .subscribe(onNext: {
+                print($0) // 20 
+            })
+
     }
     
 

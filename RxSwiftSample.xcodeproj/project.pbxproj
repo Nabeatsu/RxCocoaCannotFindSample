@@ -14,6 +14,8 @@
 		558B33A722845153006BA248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558B33A522845153006BA248 /* LaunchScreen.storyboard */; };
 		558B33B222845153006BA248 /* RxSwiftSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558B33B122845153006BA248 /* RxSwiftSampleTests.swift */; };
 		558B33C6228455BE006BA248 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558B33C0228453E8006BA248 /* RxTest.framework */; };
+		55FEA4E32284F31F00D6113B /* GitHubSignup1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FEA4E22284F31F00D6113B /* GitHubSignup1.storyboard */; };
+		55FEA4E72284F38A00D6113B /* GitHubSignupViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FEA4E62284F38A00D6113B /* GitHubSignupViewController1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		558B33BD228452B5006BA248 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		558B33C0228453E8006BA248 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		558B33C2228453F7006BA248 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		55FEA4E22284F31F00D6113B /* GitHubSignup1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GitHubSignup1.storyboard; sourceTree = "<group>"; };
+		55FEA4E62284F38A00D6113B /* GitHubSignupViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSignupViewController1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		558B339B22845152006BA248 /* RxSwiftSample */ = {
 			isa = PBXGroup;
 			children = (
+				55FEA4E42284F34400D6113B /* GitHubSIgnUp */,
 				558B339C22845152006BA248 /* AppDelegate.swift */,
 				558B339E22845152006BA248 /* ViewController.swift */,
 				558B33A022845152006BA248 /* Main.storyboard */,
@@ -110,6 +115,23 @@
 				558B33BD228452B5006BA248 /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55FEA4E42284F34400D6113B /* GitHubSIgnUp */ = {
+			isa = PBXGroup;
+			children = (
+				55FEA4E52284F35A00D6113B /* UsingVanillaObservables > 1 */,
+				55FEA4E22284F31F00D6113B /* GitHubSignup1.storyboard */,
+			);
+			path = GitHubSIgnUp;
+			sourceTree = "<group>";
+		};
+		55FEA4E52284F35A00D6113B /* UsingVanillaObservables > 1 */ = {
+			isa = PBXGroup;
+			children = (
+				55FEA4E62284F38A00D6113B /* GitHubSignupViewController1.swift */,
+			);
+			path = "UsingVanillaObservables > 1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				558B33A722845153006BA248 /* LaunchScreen.storyboard in Resources */,
+				55FEA4E32284F31F00D6113B /* GitHubSignup1.storyboard in Resources */,
 				558B33A422845153006BA248 /* Assets.xcassets in Resources */,
 				558B33A222845152006BA248 /* Main.storyboard in Resources */,
 			);
@@ -258,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				558B339F22845152006BA248 /* ViewController.swift in Sources */,
+				55FEA4E72284F38A00D6113B /* GitHubSignupViewController1.swift in Sources */,
 				558B339D22845152006BA248 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

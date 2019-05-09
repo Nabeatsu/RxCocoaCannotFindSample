@@ -11,11 +11,15 @@ import RxSwift
 import RxCocoa
 
 class ViewController: UIViewController {
-//    let scheduler = TestScheduler(initialClock: 0)
-
+    
+    @IBAction func tappedGitHubSignUp(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "GitHubSignup1", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "GitHubSignUpViewController1")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
     }
 
 

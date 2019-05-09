@@ -1,24 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JZx-NG-z8W">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Samples-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H13-R0-P79">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mjL-F4-O0o">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfS-xj-Q0E">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                                <color key="backgroundColor" red="0.85685855830000002" green="0.85685855830000002" blue="0.85685855830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Le3-Fs-GUT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                                <state key="normal" title="GitHubSignUp"/>
+                                                <connections>
+                                                    <action selector="tappedGitHubSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Emo-35-9nV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mjL-F4-O0o" firstAttribute="leading" secondItem="H13-R0-P79" secondAttribute="leading" id="8fW-vP-zVo"/>
+                                    <constraint firstAttribute="trailing" secondItem="mjL-F4-O0o" secondAttribute="trailing" id="AdE-20-ltj"/>
+                                    <constraint firstItem="mjL-F4-O0o" firstAttribute="top" secondItem="H13-R0-P79" secondAttribute="top" id="hXK-yu-pdY"/>
+                                    <constraint firstAttribute="bottom" secondItem="mjL-F4-O0o" secondAttribute="bottom" id="skU-UY-7HX"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="8Md-aF-acA" firstAttribute="bottom" secondItem="H13-R0-P79" secondAttribute="bottom" id="4YF-zl-66L"/>
+                            <constraint firstItem="H13-R0-P79" firstAttribute="leading" secondItem="8Md-aF-acA" secondAttribute="leading" id="6Cb-nW-jl8"/>
+                            <constraint firstItem="8Md-aF-acA" firstAttribute="trailing" secondItem="H13-R0-P79" secondAttribute="trailing" id="BFQ-rV-Am9"/>
+                            <constraint firstItem="H13-R0-P79" firstAttribute="top" secondItem="8Md-aF-acA" secondAttribute="top" id="Jgy-nX-JEa"/>
+                            <constraint firstItem="H13-R0-P79" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Zjp-iY-WGp"/>
+                            <constraint firstItem="mjL-F4-O0o" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ypj-SJ-OwA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Md-aF-acA"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Samples" id="XRi-QF-H2B"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="971.01449275362324" y="41.517857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ed2-me-bBe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JZx-NG-z8W" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6FY-T5-hl0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gge-qz-QKa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wl2-TO-tsn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="42"/>
         </scene>
     </scenes>
 </document>
