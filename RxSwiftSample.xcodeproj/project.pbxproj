@@ -13,9 +13,7 @@
 		558B33A422845153006BA248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 558B33A322845153006BA248 /* Assets.xcassets */; };
 		558B33A722845153006BA248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558B33A522845153006BA248 /* LaunchScreen.storyboard */; };
 		558B33B222845153006BA248 /* RxSwiftSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558B33B122845153006BA248 /* RxSwiftSampleTests.swift */; };
-		558B33C3228453F7006BA248 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558B33C2228453F7006BA248 /* RxCocoa.framework */; };
 		558B33C6228455BE006BA248 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558B33C0228453E8006BA248 /* RxTest.framework */; };
-		558B33C8228456DA006BA248 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558B33BD228452B5006BA248 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				558B33C8228456DA006BA248 /* RxSwift.framework in Frameworks */,
-				558B33C3228453F7006BA248 /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
